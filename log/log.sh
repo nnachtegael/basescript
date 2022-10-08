@@ -57,6 +57,8 @@ log()
     # Extra parameters
     LOCAL_TIMESTAMP=$(date "$LOCAL_TIMESTAMP_FLAG")
     LOCAL_LOG_FULL_PATH="${LOCAL_LOG_BASE_PATH%/}/$LOCAL_LOG_NAME"
+    
+    LOCAL_ALLOW_RUN_WITH_SUDO=true
 
     # Allows 'sudo' to run this function if destination path it's not owned by the current user
     if [[ "$LOCAL_ALLOW_RUN_WITH_SUDO" == true ]]; then
